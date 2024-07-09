@@ -1,19 +1,20 @@
+import java.util.ArrayList;
+
 public class Character {
-    // Attributes
     private String name;
     private int health;
     private int attackPower;
     private int defense;
+    private ArrayList<Item> inventory;
 
-    // Constructor
     public Character(String name, int health, int attackPower, int defense) {
         this.name = name;
         this.health = health;
         this.attackPower = attackPower;
         this.defense = defense;
+        this.inventory = new ArrayList<>();
     }
 
-    // Getters and Setters
     public String getName() {
         return name;
     }
@@ -46,34 +47,44 @@ public class Character {
         this.defense = defense;
     }
 
-    // Method to attack another character
+    public ArrayList<Item> getInventory() {
+        return inventory;
+    }
+
+    public void addItem(Item item) {
+        inventory.add(item);
+        health += item.getHealthBoost();
+        attackPower += item.getAttackBoost();
+        defense += item.getDefenseBoost();
+    }
+
     public void attack(Character target) {
         int damage = this.attackPower - target.getDefense();
         if (damage > 0) {
             target.setHealth(target.getHealth() - damage);
+        } else {
+            damage = 0;
         }
         System.out.println(this.name + " attacks " + target.getName() + " for " + damage + " damage.");
     }
 
-    // Method to defend (could be expanded based on game logic)
-    public void defend() {
-        System.out.println(this.name + " is defending.");
-        // Logic for defending could be added here
+    public void heal(int amount) {
+        this.health += amount;
+        System.out.println(this.name + " heals for " + amount + " health.");
     }
 
-    // Check if the character is alive
     public boolean isAlive() {
         return this.health > 0;
     }
 
-    // toString method to display character details
     @Override
     public String toString() {
-        return "Character{" +
+        return "Character:" +
                 "name='" + name + '\'' +
                 ", health=" + health +
                 ", attackPower=" + attackPower +
                 ", defense=" + defense +
+                ", inventory=" + inventory +
                 '}';
     }
 }

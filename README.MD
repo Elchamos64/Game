@@ -1,32 +1,36 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+This is a basic role play text based game using JAVA. The game uses basic JAVA features like:
+- `ArrayList`
+- `Classes`
+- `Expressions`
+- `Conditionals`
+- `Loops`
+- `Functions`
 
-{Provide a description of the software that you wrote to demonstrate the Java language.}
+The idea behind writing this software is to understand better how to write code in JAVA while making a fun game!
 
-{Describe your purpose for writing this software.}
+Bellow is a video demonstration of the software:
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Text Base Game Using JAVA](https://www.youtube.com/watch?v=gppnUaiRrFE)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-For this website I used JAVA.
-{Describe the programming language that you used and any libraries.}
+For this website I used JAVA. And as my code editor I used intellIJ IDEA 2024. I specifically chose this code editor because it's easy to use and faster to write JAVA code because it already comes with all the packages and extensions that you need to code in JAVA or Kotlin.
+You also need to have some understanding of Object oriented programming due to the nature of the Java programming language.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
+To help me create this software I used many YouTube tutorials and AI tools like chatGPT bellow I leave some links:
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [ChatGPT](https://chat.openai.com/)
+- [Java Tutorial for Beginners](https://www.youtube.com/watch?v=eIrMbAQSU34)
+- [IntellIJ IDEA download](https://www.jetbrains.com/idea/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
+The software could use some more features, like:
 
-- Item 1
-- Item 2
-- Item 3
+- Adding more items to the game.
+- Make the enemy choose its own action before the turn ends.
+- Adding some story to the game to make it interesting.
